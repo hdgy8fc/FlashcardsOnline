@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 90vw; /* Increase width */
+    max-width: 800px; /* Allow a bigger max size */
+    height: 90vh; /* Increase height */
+    background: url('https://i.postimg.cc/1XVDqDkW/sigma.png') no-repeat center center;
+    background-size: contain; /* Ensures the whole image is visible */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+#problem {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px; /* Moves it slightly up */
+    color: black;
+}
+
+#answer {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+#remaining {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
