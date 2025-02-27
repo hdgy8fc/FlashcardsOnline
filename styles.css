@@ -14,6 +14,15 @@ body {
     left: 10px;
     font-size: 1.5rem;
     font-weight: bold;
+    color: grey; /* Makes the title text grey */
+}
+
+
+body {
+    background-image: url('https://i.postimg.cc/jjDn4mcv/Class-Starts-Now.jpg');
+    background-size: cover; /* Makes sure the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .container {
