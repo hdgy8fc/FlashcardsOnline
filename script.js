@@ -14,7 +14,7 @@ function generateProblem() {
     let operator = operators[Math.floor(Math.random() * operators.length)];
 
     if (operator === "/") {
-        num1 = num1 * num2;
+        num1 = num1 * num2; /* you better be just studing the code*/
     }
 
     let evalOperator = operator === "x" ? "*" : operator;
@@ -44,18 +44,19 @@ function updateScoreAndNext() {
         generateProblem();
     } else {
         problemElement.textContent = "Game Over! Final Score: " + score;
-        answerInput.disabled = true;
+        answerInput.disabled = true; /* Are you jealouuuss (check the cs)*/
     }
 }
 
 function resetTimeout() {
     clearTimeout(timeout);
+    console.log("I see you in my console...");
     timeout = setTimeout(() => {
         remaining--;
-        problemElement.textContent = "Took too long, Next question";
+        problemElement.textContent = "Took too long, Next question"; /* like you took too long to answer why your in my code */
         answerInput.value = "";
         setTimeout(() => {
-            updateScoreAndNext();
+            updateScoreAndNext(); 
         }, 1000);
     }, 5000);
 }

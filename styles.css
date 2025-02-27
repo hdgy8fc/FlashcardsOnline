@@ -9,14 +9,18 @@ body {
 }
 
 #title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* is that a sans reference - Hershel*/
     position: absolute;
     top: 10px;
     left: 10px;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: bold; /* GET OUT OF MY CODE YOU OLD TIMEY PRICK - Hershel*/
     color: grey; /* Makes the title text grey */
 }
 
+#score {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* is that a sans reference - Hershel*/
+}
 
 body {
     background-image: url('https://i.postimg.cc/jjDn4mcv/Class-Starts-Now.jpg');
@@ -34,7 +38,7 @@ body {
     background-size: contain; /* Ensures the whole image is visible */
     background-repeat: no-repeat; /* Prevents tiling */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Come on man you idiot i made this on my own you theif - Hershel*/
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -44,7 +48,7 @@ body {
 
 
 #problem {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* is that a sans reference - Hershel*/
     font-size: 3rem;
     font-weight: bold;
     position: relative;
@@ -53,16 +57,18 @@ body {
 }
 
 #answer {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* is that a sans reference - Hershel*/
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 10px; /* yeah the functions called answer like ANSWER ME WHY R U IN MY CODE - Hershel*/
     text-align: center;
 }
 
 #remaining {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* is that a sans reference - Hershel*/
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* WARNING: UNAUTHORIZED ACCESS DETECTED. TRACKING IP... */
     font-weight: bold;
     color: black;
 }
