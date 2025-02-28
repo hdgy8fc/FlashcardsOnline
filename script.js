@@ -7,7 +7,7 @@ let scoreElement = document.getElementById("score");
 let remainingElement = document.getElementById("remaining");
 let timeout;
 let minNum = 1;
-let maxNum = 10; 
+let maxNum = 10; // Default is easy mode
 
 // Initial gamemode selection message
 problemElement.textContent = "Choose a gamemode: H for Hard, M for Medium, E for Easy";
@@ -66,7 +66,6 @@ function generateProblem() {
 
 
 let cheatMode = false;
-
 let correctSound = new Audio("sounds/correct.mp3");
 let wrongSound = new Audio("sounds/wrong.mp3")
 let alarmSound = new Audio("sounds/cheat.mp3")
