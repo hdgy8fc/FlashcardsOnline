@@ -7,7 +7,7 @@ let scoreElement = document.getElementById("score");
 let remainingElement = document.getElementById("remaining");
 let timeout;
 let minNum = 1;
-let maxNum = 10; // Default is easy mode
+let maxNum = 10; 
 
 // Initial gamemode selection message
 problemElement.textContent = "Choose a gamemode: H for Hard, M for Medium, E for Easy";
