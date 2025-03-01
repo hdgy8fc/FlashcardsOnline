@@ -37,6 +37,13 @@ answerInput.addEventListener("keypress", function (event) {
     }
 });
 
+answerInput.addEventListener("input", function () {
+    if (answerInput.value.trim().toLowerCase() === "hawk tuah") {
+        document.body.classList.add("pink-mode");
+    }
+});
+
+
 function startGame() {
     generateProblem();
 }
@@ -71,8 +78,14 @@ let wrongSound = new Audio("sounds/wrong.mp3")
 let alarmSound = new Audio("sounds/cheat.mp3")
 function checkAnswer() {
     let userAnswer = answerInput.value.trim();
+
     if (userAnswer === "") return; // Prevent blank submissions
     clearTimeout(timeout); // Reset timeout if answered
+
+    if (userAnswer.toLowerCase() === "hawk tuah") {
+        document.body.classList.add("pink-mode");
+        return;
+    }
 
     if (userAnswer === "22625") {
         cheatMode = true;
@@ -95,6 +108,7 @@ function checkAnswer() {
     }
     remaining--;
 }
+
 
 
 function updateScoreAndNext() {

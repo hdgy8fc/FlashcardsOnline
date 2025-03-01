@@ -34,7 +34,7 @@ body {
     width: 90vw; /* Increase width */
     max-width: 800px; /* Allow a bigger max size */
     height: 90vh; /* Increase height */
-    background: url('https://i.postimg.cc/1XVDqDkW/sigma.png') no-repeat center center;
+    background: url('https://i.postimg.cc/zvGqvn4T/sigma.png') no-repeat center center;
     background-size: contain; /* Ensures the whole image is visible */
     background-repeat: no-repeat; /* Prevents tiling */
     display: flex;
@@ -55,6 +55,20 @@ body {
     margin-bottom: 20px; 
     color: black;
 }
+
+.pink-mode::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 105, 180, 0.85); /* Darker pink with higher opacity */
+    pointer-events: none; /* So it doesn't block interactions */
+    z-index: 9999; /* Make sure it appears on top */
+}
+
+
 
 #answer {
     font-family: 'Comic Sans MS', cursive, sans-serif; /* is that a sans reference - Hershel*/
