@@ -10,7 +10,7 @@ let minNum = 1;
 let maxNum = 10; // Default is easy mode
 
 // Initial gamemode selection message
-problemElement.textContent = "Choose a gamemode: H for Hard, M for Medium, E for Easy";
+problemElement.textContent = "Choose a gamemode H for Hard, M for Medium, E for Easy";
 
 // Gamemode selection
 answerInput.addEventListener("keypress", function (event) {
