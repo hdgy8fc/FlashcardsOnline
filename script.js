@@ -30,7 +30,7 @@ answerInput.addEventListener("keypress", function (event) {
                 maxNum = 10;
                 startGame();
             } else {
-                problemElement.textContent = "Invalid input. Choose: H for Hard, M for Medium, E for Easy";
+                problemElement.textContent = "Invalid input. Choose H for Hard, M for Medium, E for Easy";
             }
             answerInput.value = "";
         }
