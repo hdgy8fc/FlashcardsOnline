@@ -10,7 +10,7 @@ let minNum = 1;
 let maxNum = 10; // Default is easy mode
 
 // Initial gamemode selection message
-problemElement.textContent = "Choose a gamemode H for Hard, M for Medium, E for Easy";
+problemElement.textContent = "Choose a gamemode: H for Hard, M for Medium, E for Easy";
 
 // Gamemode selection
 answerInput.addEventListener("keypress", function (event) {
@@ -87,13 +87,27 @@ function checkAnswer() {
         return;
     }
 
-    if (userAnswer === "22625") {
+    if (userAnswer === "!%debug%!") {
         cheatMode = true;
-        problemElement.textContent = "Cheat mode activated! You can't get anything wrong now.";
-        setTimeout(() => updateScoreAndNext(), 1000);
+        problemElement.textContent = "Debug mode activated! This is mainly used for testing!.";
+        setTimeout(() => updateScoreAndNext(), 10000);
         alarmSound.play();
+        
+
+        // Change font styles to default (remove Comic Sans)
+        document.querySelectorAll("*").forEach(el => {
+            el.style.fontFamily = "initial";
+        });
+
+        // Change background image
+        document.body.style.backgroundImage = "url('https://i.postimg.cc/tJHy1RdZ/Class-Starts-Now-Copy.jpg')"; // Change to your new image
+
+        // Change .container image
+        document.querySelector(".container").style.backgroundImage = "url('https://i.postimg.cc/ydsvWwg6/sigma-Copy.png')"; // Change to your new image
+
         return;
     }
+
 
     userAnswer = parseFloat(userAnswer);
 
@@ -120,7 +134,7 @@ function updateScoreAndNext() {
         generateProblem();
     } else {
         if (cheatMode)
-            problemElement.textContent = "Wow you got " + score + " in cheat mode, that was unexpected."
+            problemElement.textContent = "DEBUG TEST SCORE: " + score + " TEST " + Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum + " IS DONE";
         else if (score === 0)
             problemElement.textContent = "Oof... a perfect zero. Maybe actually try next time? ;(";
         else if (score < 20)
@@ -129,8 +143,10 @@ function updateScoreAndNext() {
             problemElement.textContent = "You're doing good, but a little more practice could help! Your score: " + score;
         else if (score < 70)
             problemElement.textContent = "You're doing amazing, but I know you can do even better! Your score: " + score;
-        else if (score < 100)
+        else if (score < 99)
             problemElement.textContent = "Incredible work! You scored " + score + "!";
+        else if (score = 100)
+            problemElement.textContent = "Amazing work! you got a " + score
         answerInput.disabled = true;
     }
 }
